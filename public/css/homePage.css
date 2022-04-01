@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap');
+
+:root {
+    --blue: rgb(43, 49, 235);
+    --blueHover: rgb(92, 97, 252);
+    --grayishBlue: rgb(238, 234, 234);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+button {
+    margin-top: 5%;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: var(--blueHover);
+}
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.wrapper {
+    background-color: var(--blue);
+}
+
+.wrapper h1 {
+    color: white;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-left: 8%;
+    padding-top: 5%;
+    margin-bottom: 3%;
+}
+
+.wrapper .wrapper__presentation {
+    background-color: var(--grayishBlue);
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.wrapper .wrapper__presentation .text {
+    text-align: justify;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.wrapper .wrapper__presentation .text h4 {
+    color: var(--blue);
+    font-weight: 500;
+
+}
+.wrapper .wrapper__presentation .text h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+.wrapper .wrapper__presentation .text h2 span{
+    color: var(--blue);
+}
+
+.wrapper .wrapper__presentation .text p {
+    margin-top: 3%;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.wrapper .wrapper__presentation .text button {
+    width: 50%;
+    height: 10%;
+}
+
+.wrapper .wrapper__presentation .image {
+    width: 100%;
+    background-image: url(../images/foto.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.wrapper .wrapper__presentation .image .wrapper__social {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.wrapper .wrapper__presentation .image .wrapper__social a {
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.wrapper .wrapper__presentation .image .wrapper__social a div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5vh;
+    width: 5vh;
+}
+
+.wrapper .wrapper__presentation .image .wrapper__social .github {
+    background-image: url(../images/social/github.png);
+}
+.wrapper .wrapper__presentation .image .wrapper__social .linkedin {
+    background-image: url(../images/social/linkedin.png);
+}
+
+.wrapper .wrapper__presentation .image .wrapper__social .gmail {
+    background-image: url(../images/social/email.png);
+}
+.wrapper .wrapper__about__me {
+    background-color: white;
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding-bottom: 5%;
+}
+
+.wrapper .wrapper__about__me .text__about__me {
+    text-align: justify;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 50%;
+}
+.wrapper .wrapper__about__me .text__about__me h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+.wrapper .wrapper__about__me .text__about__me h2 span {
+    background-color: var(--blue);
+    color: white;
+}
+
+.wrapper .wrapper__about__me .text__about__me p {
+    margin-top: 3%;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.wrapper .wrapper__about__me .text__about__me button {
+    width: 40%;
+    height: 20%;
+}
+.wrapper .wrapper__about__me .text__about__me button a {
+    color: white;
+}
+
+.wrapper .wrapper__about__me .wrapper__skills {
+    margin-top: 5%;
+    width: 50%;
+}
+.wrapper .wrapper__about__me .wrapper__skills .skill{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.wrapper .wrapper__about__me .wrapper__skills .skill p {
+    font-weight: 700;
+}
+.wrapper .wrapper__about__me .wrapper__skills .skill .img_80 {
+    background-image: url(../images/sliders/80.png);
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper .wrapper__about__me .wrapper__skills .skill .img_60 {
+    background-image: url(../images/sliders/60.png);
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.wrapper .wrapper__about__me .wrapper__skills .skill .two {
+    margin-right: 10px;
+}
+.wrapper .wrapper__about__me .wrapper__skills .skill .one {
+    margin-right: 22px;
+}
+.wrapper .wrapper__about__me .wrapper__skills .skill .three {
+    margin-right: 70px;
+}
+.wrapper .wrapper__about__me .wrapper__skills .skill .four {
+    margin-right: 110px;
+}
+
+.wrapper .wrapper__projects {
+    width: 100%;
+    height: 100%;
+    background-color: var(--grayishBlue);
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.wrapper .wrapper__projects h1 {
+    margin: 0;
+    margin-bottom: 3%;
+    color: black;
+    letter-spacing: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.wrapper .wrapper__projects p {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.wrapper .wrapper__projects .projects {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.wrapper .wrapper__projects .projects .card {
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    margin-left: 3%;
+    text-align: left;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);
+}
+
+.wrapper .wrapper__projects .projects .card:hover {
+    background-color: var(--grayishBlue);
+}
+
+.wrapper .wrapper__projects .projects .card .img {
+    background-image: url(../images/foto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.wrapper .wrapper__projects .projects .card .type {
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+    color: white;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding-top: 3%;
+    font-size: 0.8rem;
+    width: 7vh;
+    height: 4vh;
+    border-radius: 5px;
+}
+
+.wrapper .wrapper__projects .projects .card .title {
+    font-weight: 700;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.wrapper .wrapper__projects button {
+    width: 20%;
+    height: 10vh;
+}
+
+.wrapper .wrapper__experience {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper .wrapper__experience .text__experience {
+    text-align: justify;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.wrapper .wrapper__experience .text__experience h2 span {
+    background-color: var(--blue);
+    color: white;
+}
+.wrapper .wrapper__experience .text__experience p {
+    margin-top: 5%;
+}
+.wrapper .wrapper__experience .text__experience button {
+    height: 5vh;
+    width: 30%;
+}
+
+.wrapper .wrapper__experience .experiences {
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+.wrapper .wrapper__experience .experiences .experience_card {
+    background-color: var(--grayishBlue);
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.wrapper .wrapper__experience .experiences .experience_card .period {
+    font-size: 0.9rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: var(--blue);
+}
+
+.wrapper .wrapper__articles {
+    width: 100%;
+    height: 100%;
+    background-color: var(--grayishBlue);
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.wrapper .wrapper__articles .text__articles h1 {
+    margin: 0;
+    margin-bottom: 3%;
+    color: black;
+    letter-spacing: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.wrapper .wrapper__articles .text__articles h2 {
+    font-size: 1rem;
+}
+
+.wrapper .wrapper__articles .articles{
+    margin-top: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+.wrapper .wrapper__articles .articles .card_article {
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    margin-left: 3%;
+    text-align: left;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);
+}
+
+.wrapper .wrapper__articles .articles .card_article .img{
+    background-image: url(../images/foto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+.wrapper .wrapper__articles .articles .card_article .date{
+    color: var(--blue);
+    font-weight: 700;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 0.8rem;
+}
+.wrapper .wrapper__articles .articles .card_article .title {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    font-weight: 700;
+}
+
+.wrapper .wrapper__articles .articles .card_article button {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    width: 40%;
+    height: 5vh;
+}
+
+.wrapper .wrapper__send__message {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.wrapper .wrapper__send__message .maps {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+}
+
+.wrapper .wrapper__send__message .send_message {
+    margin-top: 10%;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.wrapper .wrapper__send__message .send_message h1 {
+    margin: 0;
+    margin-bottom: 3%;
+    color: black;
+    letter-spacing: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.wrapper .wrapper__send__message .send_message form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.wrapper .wrapper__send__message .send_message form .row1 {
+    display: flex;
+    flex-direction: row;
+}
+.wrapper .wrapper__send__message .send_message form .name {
+    margin-right: 5%;
+}
+
+.wrapper .wrapper__send__message .send_message form input {
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 5%;
+    border-color: grey;
+}
+
+.wrapper .wrapper__send__message .send_message form .text_area {
+    border-color: grey;
+}
+
+.wrapper .wrapper__send__message .send_message form button {
+    height: 5vh;
+}
+
+.wrapper .footer {
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.wrapper .footer .em{
+    margin-top: 10%;
+}
+.wrapper .footer h2{
+    margin-top: 2%;
+    color: white;
+}
+.wrapper .footer h2 a {
+    color: white;   
+}
+.wrapper .footer .wrapper__social {
+    margin-left: 40%;
+    display: flex;
+    flex-direction: row;
+}
+.wrapper .footer .wrapper__social a div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5vh;
+    width: 5vh;
+}
+
+.wrapper .footer .wrapper__social a {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.wrapper .footer .wrapper__social .github {
+    background-image: url(../images/social/github.png);
+}
+.wrapper .footer .wrapper__social .linkedin {
+    background-image: url(../images/social/linkedin-black.png);
+}
+.wrapper .footer .wrapper__social .gmail {
+    background-image: url(../images/social/email.png);
+}
