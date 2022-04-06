@@ -82,11 +82,57 @@ const sendEmail = async(req, res, next) => {
     }
 }
 
-const projectsPage = async(req, res, next) => {
+const goToExperiences = async(req, res, next) => {
     try {
-        res.render('projectsPage');
-    } catch(e) {
-        console.log('Erro ao renderizar pagina');
+        const experiences = await firestore.collection('experience');
+        const data = await experiences.get();
+        const experiencesArray = [];
+        if(data.empty) {
+            res.status(404).send('No User record found');
+        } else {
+            data.forEach(doc => {
+                const experience = new Experience(
+                    doc.data().title,
+                    doc.data().type,
+                    setDate(doc.data().dateEnd),
+                    setDate(doc.data().dateStart),
+                    doc.data().skills,
+                    doc.data().place,
+                    doc.data().description
+                );
+                
+                experiencesArray.push(experience);
+            });
+        }
+        res.render('experiences', {experiences: experiencesArray});
+    } catch(e) {    
+        console.log("Erro ao renderizar página");
+    }
+}
+
+const goToWorks = async(req, res, next) => {
+    try {
+        const projects = await firestore.collection('projects').get();
+        const projectsArray = [];
+
+        if(projects.empty) {
+            res.status(404).send('No User record found');
+        } else {
+            projects.forEach( doc => {
+                const project = new Project(
+                    doc.data().title,
+                    doc.data().type,
+                    doc.data().skills,
+                    doc.data().link,
+                    doc.data().img_url
+                );
+                projectsArray.push(project);
+
+            });
+        }
+        res.render('works', {projects: projectsArray});
+    }catch(e) {
+        console.log('Erro ao renderizar página');
     }
 }
 
@@ -104,5 +150,6 @@ const setDate = (dataExclusao) => {
 module.exports = {
     homePage,
     sendEmail,
-    projectsPage
+    goToExperiences,
+    goToWorks
 }

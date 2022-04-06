@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/experiences.css">
+    <title>Experiências de Trabalho</title>
+</head>
+<body>
+
+    <main class="container">
+        <div class="wrapper">
+            <h1 class="title">Experiências</h1>
+            
+            <div class="wrapper__experience">
+                <div class="text__experience">
+                    <h2>Área contém algumas das melhores experiências de 
+                        trabalho que já realizei.
+                    </h2>
+                    
+                    <form action="/api/" method="get">
+                        <button type="submit">Retornar para o início</button>
+                    </form>
+                </div>
+    
+                <div class="experiences">
+                    <% experiences.forEach(experience => {%>
+                        <div class="experience_card">
+                            <h3 class="title"><%=experience.title %></h3>
+                            <h4 class="period">periodo | <%=experience.dateStart %> - <%=experience.dateEnd %></h4>
+                            <p class="description"><%=experience.description%>
+                            </p>
+                        </div>
+                    <%});%>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <h2 class="em"><a href="mailto:jorgesoares87.jj@gmail.com">jorgesoares87.jj@gmail.com</a></h2>
+                <h2> +55 (82) 99801-4278</h2>
+                <div class="wrapper__social">
+                    <a href="https://github.com/jorgesfj"><div class="github"></div></a>
+                    <a href="https://www.linkedin.com/in/jorge-soares-farias/"><div class="linkedin"></div></a>
+                    <a href="mailto:jorgesoares87.jj@gmail.com"><div class="gmail"></div></a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </main>
+</body>
+
+</html>

@@ -82,7 +82,10 @@
                         </div>
                     <%});%>
                 </div>
-                <button>Ver Todos os trabalhos</button>
+                
+                <form action="/api/goToWorks" method="get">
+                    <button type="submit">Ver Todos os trabalhos</button>
+                </form>
             </div>
     
             <div class="wrapper__experience">
@@ -103,8 +106,9 @@
                             </p>
                         </div>
                     <%});%>
-
-                    <button>Ver todas as experiências</button>
+                    <form action="/api/goToExperiences" method="get">
+                        <button type="submit">Ver todas as experiências</button>
+                    </form>
                 </div>
             </div>
     

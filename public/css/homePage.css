@@ -399,6 +399,7 @@ html {
     margin-left: 10%;
     margin-bottom: 10%;
     font-weight: 700;
+    height: 15vh;
 }
 
 .wrapper .wrapper__articles .articles .card_article button {

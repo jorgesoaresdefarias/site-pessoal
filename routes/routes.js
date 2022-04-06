@@ -1,12 +1,15 @@
 const express = require('express');
-const {homePage, sendEmail, projectsPage} = require('../controllers/pageController');
+const {homePage, sendEmail, goToExperiences, goToWorks} = require('../controllers/pageController');
 const router = express.Router();
 
 router.get('/', homePage);
 
-router.get('/projects', projectsPage);
 
 router.post('/sendEmail', sendEmail);
+
+router.get('/goToExperiences', goToExperiences);
+
+router.get('/goToWorks', goToWorks);
 
 module.exports = {
     routes: router

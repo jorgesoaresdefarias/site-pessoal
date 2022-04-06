@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap');
+
+:root {
+    --blue: rgb(43, 49, 235);
+    --blueHover: rgb(92, 97, 252);
+    --grayishBlue: rgb(238, 234, 234);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+button {
+    margin-top: 5%;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: var(--blueHover);
+}
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.wrapper {
+    background-color: var(--blue);
+}
+
+.wrapper h1 {
+    color: white;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-left: 8%;
+    padding-top: 5%;
+    margin-bottom: 3%;
+}
+
+.wrapper .wrapper__experience {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.wrapper .wrapper__experience .text__experience {
+    text-align: justify;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.wrapper .wrapper__experience .text__experience h2 {
+    padding-top: 5%;
+}
+
+.wrapper .wrapper__experience .text__experience h2 span {
+    background-color: var(--blue);
+    color: white;
+}
+.wrapper .wrapper__experience .text__experience p {
+    margin-top: 5%;
+    padding-top: 5%;
+    width: 100%;
+}
+.wrapper .wrapper__experience .text__experience button {
+    height: 5vh;
+    width: 100%;
+}
+
+.wrapper .wrapper__experience .experiences {
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.wrapper .wrapper__experience .experiences button {
+    height: 10vh;
+    width: 100%;
+}
+.wrapper .wrapper__experience .experiences .experience_card {
+    background-color: var(--grayishBlue);
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.wrapper .wrapper__experience .experiences .experience_card .period {
+    font-size: 0.9rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: var(--blue);
+}
+
+
+.wrapper .footer {
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.wrapper .footer .em{
+    margin-top: 10%;
+}
+.wrapper .footer h2{
+    margin-top: 2%;
+    color: white;
+}
+.wrapper .footer h2 a {
+    color: white;   
+}
+.wrapper .footer .wrapper__social {
+    margin-left: 40%;
+    display: flex;
+    flex-direction: row;
+}
+.wrapper .footer .wrapper__social a div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5vh;
+    width: 5vh;
+}
+
+.wrapper .footer .wrapper__social a {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.wrapper .footer .wrapper__social .github {
+    background-image: url(../images/social/github.png);
+}
+.wrapper .footer .wrapper__social .linkedin {
+    background-image: url(../images/social/linkedin-black.png);
+}
+.wrapper .footer .wrapper__social .gmail {
+    background-image: url(../images/social/email.png);
+}

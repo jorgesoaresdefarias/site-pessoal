@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap');
+
+:root {
+    --blue: rgb(43, 49, 235);
+    --blueHover: rgb(92, 97, 252);
+    --grayishBlue: rgb(238, 234, 234);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+button {
+    margin-top: 5%;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: var(--blueHover);
+}
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.wrapper {
+    background-color: var(--blue);
+}
+
+.wrapper h1 {
+    color: white;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-left: 8%;
+    padding-top: 5%;
+    margin-bottom: 3%;
+}
+
+.wrapper .wrapper__projects {
+    width: 100%;
+    height: 100%;
+    background-color: var(--grayishBlue);
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.wrapper .wrapper__projects .projects .card button {
+    width: 100%;
+    height: 10vh;
+    
+    margin-left: 0;
+    margin-right: 0;
+}
+.wrapper .wrapper__projects h1 {
+    margin: 0;
+    margin-bottom: 3%;
+    color: black;
+    letter-spacing: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.wrapper .wrapper__projects h2 {
+    padding-top: 5%;
+}
+
+.wrapper .wrapper__projects p {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.wrapper .wrapper__projects .projects {
+    margin-top: 5%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.wrapper .wrapper__projects .projects .card {
+    background-color: white;
+    width: 50vh;
+    margin-top: 5%;
+    height: 100%;
+    text-align: left;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);
+}
+
+.wrapper .wrapper__projects .projects .card:hover {
+    background-color: var(--grayishBlue);
+}
+
+.wrapper .wrapper__projects .projects .card .img {
+    width: 100%;
+    height: 30vh;
+}
+
+.wrapper .wrapper__projects .projects .card .type {
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+    color: white;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding-top: 3%;
+    font-size: 0.8rem;
+    width: 7vh;
+    height: 4vh;
+    border-radius: 5px;
+}
+
+.wrapper .wrapper__projects .projects .card .title {
+    font-weight: 700;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.wrapper .wrapper__projects button {
+    width: 90%;
+    height: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.wrapper .footer {
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.wrapper .footer .em{
+    margin-top: 10%;
+}
+.wrapper .footer h2{
+    margin-top: 2%;
+    color: white;
+}
+.wrapper .footer h2 a {
+    color: white;   
+}
+.wrapper .footer .wrapper__social {
+    margin-left: 40%;
+    display: flex;
+    flex-direction: row;
+}
+.wrapper .footer .wrapper__social a div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5vh;
+    width: 5vh;
+}
+
+.wrapper .footer .wrapper__social a {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.wrapper .footer .wrapper__social .github {
+    background-image: url(../images/social/github.png);
+}
+.wrapper .footer .wrapper__social .linkedin {
+    background-image: url(../images/social/linkedin-black.png);
+}
+.wrapper .footer .wrapper__social .gmail {
+    background-image: url(../images/social/email.png);
+}
