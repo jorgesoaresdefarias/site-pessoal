@@ -3,10 +3,8 @@ const app = express();
 const routes = require('./routes/routes');
 const port = 550;
 const config = require('./config');
-const cors = require('cors');
 
 app.set('view engine', 'ejs');
-app.use(cors());
 app.use(express.static('public'));
 app.use(express.static('./public'));
 app.use(express.urlencoded({extended: true}));
@@ -14,4 +12,6 @@ app.use(express.json());
 
 app.use('/api', routes.routes);
 
-app.listen(process.env.PORT || +config.port, () => console.log(`Server is running on port: ${port}!`));
+app.listen(process.env.PORT || +config.port, () => {
+    console.log('Servidor Inicializado com Sucesso!');
+});
