@@ -12,6 +12,6 @@ app.use(express.json());
 
 app.use('/api', routes.routes);
 
-app.listen(process.env.PORT || 550, () => {
+app.listen(process.env.PORT || '550', () => {
     console.log('Servidor Inicializado com Sucesso!');
 });
