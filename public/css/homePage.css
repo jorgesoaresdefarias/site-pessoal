@@ -519,3 +519,44 @@ html {
 .wrapper .footer .wrapper__social .gmail {
     background-image: url(../images/social/email.png);
 }
+
+@media only screen and (max-width: 500px){
+    
+    .wrapper .wrapper__presentation {
+        flex-direction: column;
+    }
+    
+    .wrapper .wrapper__presentation .image .wrapper__social {
+        flex-direction: column;
+    }
+    .wrapper .wrapper__about__me {
+        flex-direction: column;
+    }
+
+    .wrapper .wrapper__about__me .wrapper__skills .skill{
+        flex-direction: column;
+    }
+    
+    .wrapper .wrapper__projects .projects {
+        flex-direction: column;
+    }
+    
+    .wrapper .wrapper__experience {
+        flex-direction: column;
+    }
+    
+    .wrapper .wrapper__articles .articles{
+        flex-direction: column;
+    }
+    
+    .wrapper .wrapper__send__message {
+       flex-direction: column;
+    }
+    
+    .wrapper .wrapper__send__message .send_message form .row1 {
+        flex-direction: column;
+    }
+    .wrapper .footer .wrapper__social {
+        flex-direction: column;
+    }   
+}
