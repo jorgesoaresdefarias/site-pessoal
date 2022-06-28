@@ -89,6 +89,7 @@ html {
 .wrapper .wrapper__presentation .text button {
     width: 50%;
     height: 10%;
+    margin-bottom: 5%;
 }
 .wrapper .wrapper__presentation .text button a {
     color: white;
@@ -525,7 +526,12 @@ html {
     .wrapper .wrapper__presentation {
         flex-direction: column;
     }
-    
+    .wrapper .wrapper__about__me .wrapper__skills .skill .img_80 {
+        width: 10%;
+    }
+    .wrapper .wrapper__about__me .wrapper__skills .skill .img_60 {
+        width: 10%;
+    }
     .wrapper .wrapper__presentation .image .wrapper__social {
         flex-direction: column;
     }
@@ -534,9 +540,13 @@ html {
     }
 
     .wrapper .wrapper__about__me .wrapper__skills .skill{
-        flex-direction: column;
+        flex-direction: row;
     }
-    
+    .wrapper .wrapper__about__me .wrapper__skills {
+        width: 80%;
+        margin-left: 10%;
+    }
+
     .wrapper .wrapper__projects .projects {
         flex-direction: column;
     }
@@ -559,4 +569,19 @@ html {
     .wrapper .footer .wrapper__social {
         flex-direction: column;
     }   
+
+    .wrapper .wrapper__articles .articles .card_article {
+        width: 80%;
+    }
+
+    .wrapper .wrapper__projects .projects .card {
+        width: 80%;
+    }
+    
+    .wrapper .wrapper__about__me .text__about__me {
+        width: 80%;
+    }
+    .wrapper .wrapper__experience .experiences .experience_card {
+        margin-left: 5%;
+    }
 }
