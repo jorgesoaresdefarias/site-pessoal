@@ -88,6 +88,8 @@ html {
 }
 
 .wrapper .wrapper__experience .experiences {
+    display: flex;
+    flex-direction: column;
     margin-top: 5%;
     margin-right: 5%;
     margin-left: 5%;
@@ -160,4 +162,11 @@ html {
 }
 .wrapper .footer .wrapper__social .gmail {
     background-image: url(../images/social/email.png);
+}
+
+@media only screen and (max-width: 500px){ 
+
+    .wrapper .footer .wrapper__social {
+        flex-direction: column;
+    }
 }

@@ -62,13 +62,15 @@ html {
     padding-bottom: 5%;
     text-align: center;
 }
+
 .wrapper .wrapper__projects .projects .card button {
     width: 100%;
     height: 10vh;
-    
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
 }
+
 .wrapper .wrapper__projects h1 {
     margin: 0;
     margin-bottom: 3%;
@@ -79,6 +81,8 @@ html {
 }
 .wrapper .wrapper__projects h2 {
     padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .wrapper .wrapper__projects p {
@@ -88,15 +92,15 @@ html {
 
 .wrapper .wrapper__projects .projects {
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 30% 30% 30%;
 }
 
 .wrapper .wrapper__projects .projects .card {
     background-color: white;
-    width: 50vh;
     margin-top: 5%;
+    margin-right: 5%;
     height: 100%;
     text-align: left;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);
@@ -137,6 +141,7 @@ html {
     margin-left: 5%;
     margin-right: 5%;
 }
+
 
 
 .wrapper .footer {
@@ -185,4 +190,20 @@ html {
 }
 .wrapper .footer .wrapper__social .gmail {
     background-image: url(../images/social/email.png);
+}
+
+@media only screen and (max-width: 500px){
+    
+    .wrapper .wrapper__projects .projects {
+        margin-top: 5%;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns:90%;
+    }
+    
+    .wrapper .footer .wrapper__social {
+        margin-left: 40%;
+        display: flex;
+        flex-direction: column;
+    }
 }
