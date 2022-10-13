@@ -248,7 +248,7 @@ html {
 .wrapper .wrapper__projects .projects .card {
     background-color: white;
     width: 20%;
-    height: 100%;
+    height: 70vh;
     margin-left: 3%;
     text-align: left;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);
@@ -271,9 +271,14 @@ html {
     margin-top: 10%;
     padding-top: 3%;
     font-size: 0.8rem;
-    width: 7vh;
+    width: 10vh;
     height: 4vh;
     border-radius: 5px;
+}
+
+.wrapper .wrapper__projects .projects .card .type-skills {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .wrapper .wrapper__projects .projects .card .title {

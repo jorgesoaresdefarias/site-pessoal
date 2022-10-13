@@ -78,6 +78,11 @@
                             <%}%>
                             <div class="type"><%=project.type%></div>
                             <div class="title"><%=project.title%></div>
+                            <div class="type-skills">
+                                <% project.skills.forEach(skill => {%>
+                                    <div class="type"><%=skill%></div>
+                                <%});%>
+                            </div>
                             <a href="<%=project.link%>"><button>Ler mais</button></a>
                         </div>
                     <%});%>
